@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // IMPORTANT: This constant holds the API key for the Google AI service.
     // Hardcoding keys directly in client-side JavaScript is a security risk, as
     // anyone can view it. For a real application, this should be handled by a backend server.
-    const API_KEY = 'AIzaSyCJK_J12y5DQAI_PGuh7tZNgqjTGrvHITg';
+    const API_KEY = '';
 
     // This constructs the full URL for the Gemini API endpoint. It uses a template
     // literal (the backticks ``) to embed the API_KEY directly into the string.
