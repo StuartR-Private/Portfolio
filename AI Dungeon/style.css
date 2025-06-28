@@ -1,0 +1,112 @@
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    width: 80%;
+    max-width: 800px;
+    height: 90vh;
+    border: 2px solid #555;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.scroll-box {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-bottom: 2px solid #555;
+    line-height: 1.6;
+}
+
+/* Simple scrollbar styling */
+.scroll-box::-webkit-scrollbar {
+    width: 10px;
+}
+.scroll-box::-webkit-scrollbar-track {
+    background: #2b2b2b;
+}
+.scroll-box::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+}
+.scroll-box::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+.user-action {
+    color: #7a7a7a;
+    font-style: italic;
+}
+
+#input-area {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+#action-form {
+    flex-grow: 1;
+    display: flex;
+}
+
+#action-input {
+    flex-grow: 1;
+    background-color: #333;
+    border: 1px solid #555;
+    color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+#action-input:focus {
+    outline: none;
+    border-color: #888;
+}
+
+button {
+    background-color: #4a4a4a;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#action-form button {
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+}
+
+#inventory-button {
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6a6a6a;
+}
+
+.thinking {
+    color: #999;
+    font-style: italic;
+}
+
+/* Class to hide elements */
+.hidden {
+    display: none;
+}
